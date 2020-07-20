@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:400,500,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>🍹 Cocktail Party 🍸</title>
+    <style>
+      a:-webkit-any-link {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Dosis", sans-serif;
+        margin: 0;
+      }
+
+      .decorationImage1 {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        max-height: 360px;
+        width: 40%;
+      }
+
+      .decorationImage2 {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        max-height: 392px;
+        width: 29%;
+      }
+
+      h1 {
+        color: #fff;
+        border: solid #fff 12px;
+        text-align: center;
+        width: 54%;
+        margin: auto;
+        padding: 25px 20px;
+        font-size: 66px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #fff;
+        border-bottom: solid #fff 1px;
+        width: fit-content;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 20px 0px 10px 0px;
+        margin: 0 auto 10px auto;
+        line-height: 20px;
+      }
+
+      .subtitle {
+        color: #fd5c2e;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: solid 4px #fff;
+        border-radius: 25px;
+        margin: 40px auto;
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        transition: all 200ms ease-in-out;
+        font-family: "Dosis", sans-serif;
+        font-weight: 500;
+      }
+
+      button:hover {
+        background-color: #fff;
+        color: #fda085;
+        cursor: pointer;
+      }
+
+      .content {
+        margin-top: -100px;
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        margin: 20px;
+        padding: 60px 20px 20px;
+      }
+
+      .drinkAlbum {
+        width: fit-content;
+        margin: auto;
+      }
+
+      .cocktailImage {
+        display: inline-grid;
+        width: 260px;
+        height: 260px;
+        border: solid 8px#fff;
+        margin: 0px 6px 12px 0px;
+        background: #ff754d;
+        opacity: 1;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+
+      .cocktailName {
+        margin: auto;
+        color: transparent;
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        border: transparent solid 8px;
+        padding: 10px;
+        top: -227px;
+        transition: all 200ms ease-in-out;
+        width: 58%;
+      }
+
+      .recipeLink {
+        display: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      .cocktailImage:hover .cocktailName {
+        color: #fff;
+        border: solid 4px;
+      }
+
+      .cocktailImage:hover .cocktailPhoto {
+        opacity: 0.4;
+      }
+
+      .cocktailImage:hover .recipeLink {
+        display: block;
+        padding: 10px 20px;
+        border: solid 4px #fff;
+        border-radius: 25px;
+        position: relative;
+        top: -237px;
+        left: 35%;
+        width: fit-content;
+        margin-top: 40px;
+        font-weight: 500;
+      }
+
+      .recipeLink:hover {
+        background-color: #fff;
+        color: #fda085;
+      }
+
+      .cocktailPhoto {
+        width: 100%;
+        opacity: 1;
+        height: 260px;
+        object-fit: cover;
+        transition: all 200ms ease-in-out;
+      }
+
+      hr {
+        border: none;
+        margin: 0;
+      }
+
+      .advise {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: 26px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="decorationImage1"
+      src="https://i.ibb.co/Cm8W55Q/71-717390-summer-transparent-palm-leaves-tropical-leaves-png-transparent.png"
+    />
+    <img
+      class="decorationImage2"
+      src="https://i.ibb.co/vqxSY9r/71-717390-summer-transparent-palm-leaves-tropical-leaves-png-transparent-1.png"
+    />
+    <div class="content">
+      <h1>COCKTAIL PARTY</h1>
+      <h2>
+        Some of my favorite <span class="subtitle">Cocktail recipes!</span>
+      </h2>
+      <button>Want to join the party?</button>
+      <div class="drinkAlbum">
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMVW0thQIqMqI4w4fwnO_06buk7c-oNFUcNk27uH3Z1HNACYlm-A&s"
+          />
+          <h3 class="cocktailName">LONG ISLAND ICED TEA</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/long-island-iced-tea"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://images.absolutdrinks.com/drink-images/Raw/Absolut/396125e5-c467-41cf-9980-0586579e7cab.jpg?imwidth=500"
+          />
+          <h3 class="cocktailName">CUBA<br />LIBRE</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/cuba-libre"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://nightlife.ng/wp-content/uploads/2018/01/Jameson-Ginger-Ale-Lime-200x300-200x300.jpg"
+          />
+          <h3 class="cocktailName">JAMESON GINGER & LIME</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://supervalu.ie/real-food/recipes/jameson-ginger-and-lime"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://portalwoods.com.br/wp-content/uploads/2019/06/Easy-Vodka-Cranberry-Raspberry-Cocktail-Recipe-1.jpg"
+          />
+          <h3 class="cocktailName">VODKA CRANBERRY</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/cranberry-vodka"
+            >Recipe</a
+          >
+        </div>
+        <br />
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://i.pinimg.com/originals/e1/29/7c/e1297ccd9bad41fcbf89f448f3715c00.jpg"
+          />
+          <h3 class="cocktailName">MARTINI ROYALE</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.jamieoliver.com/drinks-tube/recipe/martini-royale/"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://meudrink.com.br/media/uploads/2017/02/meudrink-mimosa-450x594.jpg"
+          />
+          <h3 class="cocktailName">MIMOSA</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/mimosa"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://www.bbcgoodfood.com/sites/default/files/editor_files/2019/10/gin-and-tonic-700-350.jpg"
+          />
+          <h3 class="cocktailName">GIN & TONIC</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/classic-gt"
+            >Recipe</a
+          >
+        </div>
+
+        <div class="cocktailImage">
+          <img
+            class="cocktailPhoto"
+            src="https://roteirosetemperos.com/wp-content/uploads/2019/03/Drinks-de-Cacha%C3%A7a-Caipirinha-Receita.jpg"
+          />
+          <h3 class="cocktailName">CAIPIRINHA</h3>
+          <br />
+          <a
+            class="recipeLink"
+            target="_blank"
+            href="https://www.bbcgoodfood.com/recipes/caipirinha"
+            >Recipe</a
+          >
+        </div>
+      </div>
+      <hr />
+      <p class="advise">
+        <em>Please, <strong>DRINK RESPONSIBLY</strong></em>
+      </p>
+    </div>
+    <script>
+      function joinParty() {
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          let name = prompt("What's your name?");
+          let welcome = document.querySelector("h2");
+          welcome.innerHTML = "Welcome " + name + ", enjoy your cocktail!";
+        } else {
+          alert("You can't join the party just yet! Unless you get a soda.");
+        }
+      }
+
+      let joinPartyButton = document.querySelector("button");
+      joinPartyButton.addEventListener("click", joinParty);
+    </script>
+  </body>
+</html>
